@@ -12,9 +12,6 @@ namespace Examen.Views
             InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

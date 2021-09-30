@@ -16,12 +16,13 @@
         
         <Button Text="realmadrid" x:Name="botonmasmadrid"/>
         <Button Text="realmadrid" x:Name="botonmenosmadrid"/>
-        <Button Text="liverpool" x:Name="botonmasmadrid"/>
+        <Button Text="liverpool" x:Name="botonmasliverpool"/>
         <Button Text="liverpool" x:Name="botonmenosliverpool"/>
+            <Button Text="realizar registro" x:Name="botonrealizar"/>
         </StackLayout>
 
         <StackLayout Orientation="Vertical">
-            <Button Text="realizar apuesta" x:Name="boton registar"/>
+            <Button Text="realizar apuesta" x:Name="botonregistrar"/>
             <Label Text="resultado real madrid" x:Name="lblmadrid"/>
             <Label Text="resultado liverpool" x:Name="lbliverpool"/>
         </StackLayout>
