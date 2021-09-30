@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodels="clr-namespace:Examen.Viewmodels" 
+             x:Class="Examen.Views.MyPage"> 
+    <ContentPage.BindingContext> 
+        <viewmodels:ApuestaModel/> 
+    </ContentPage.BindingContext> 
+    <ContentPage.Content> 
+        <StackLayout> 
+            <ListView ItemsSource="{Binding Apuesta}" 
+                     > 
+                <ListView.ItemTemplate> 
+                    <DataTemplate> 
+                        <ViewCell> 
+                            <Grid ColumnSpacing="0"> 
+                                <Grid.ColumnDefinitions> 
+                                    <ColumnDefinition Width="*"/> 
+                                    <ColumnDefinition Width="45"/> 
+                                </Grid.ColumnDefinitions>
+                                <StackLayout Orientation="Horizontal"/>
+                                <Label Grid.Column="0" Text="{Binding usuario}" 
+                                       FontSize="25" Margin="100,0,0,0"/>
+                                <Label Grid.Column="0" Text="{Binding resultado}"
+                                        FontSize="25" TextColor="Blue"/>
+                                
+                            </Grid> 
+ 
+                        </ViewCell> 
+                    </DataTemplate> 
+                </ListView.ItemTemplate> 
+            </ListView> 
+        </StackLayout> 
+    </ContentPage.Content> 
+</ContentPage>

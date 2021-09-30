@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen.MainPage">
+
+    <StackLayout> 
+           
+            <Label x:Name="usuario" Text="usuario"/>
+            <Entry x:Name="txtid" HorizontalOptions="FillAndExpand" 
+                       Placeholder="Id Personaje"/>
+
+           
+            <Label x:Name="lblmensaje" FontSize="Large"/>
+        <StackLayout Orientation="Vertical"/>
+        <StackLayout Orientation="Horizontal">
+        
+        <Button Text="realmadrid" x:Name="botonmasmadrid"/>
+        <Button Text="realmadrid" x:Name="botonmenosmadrid"/>
+        <Button Text="liverpool" x:Name="botonmasmadrid"/>
+        <Button Text="liverpool" x:Name="botonmenosliverpool"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical">
+            <Button Text="realizar apuesta" x:Name="boton registar"/>
+            <Label Text="resultado real madrid" x:Name="lblmadrid"/>
+            <Label Text="resultado liverpool" x:Name="lbliverpool"/>
+        </StackLayout>
+        </StackLayout> 
+</ContentPage>
